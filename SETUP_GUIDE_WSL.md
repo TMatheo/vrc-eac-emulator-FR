@@ -1,4 +1,4 @@
-# WSL side
+# Côté WSL
 
 ## Install Steam
 
@@ -14,25 +14,25 @@ sudo apt install steam
 steam
 ```
 
-## Setup VRChat
+## Configuration de VRChat
 
-Install the Steam app on your WSL, open its settings, and enable `Steam Play` for all titles.
+Installez l'application Steam sur votre WSL, ouvrez ses paramètres et activez la fonction `Steam Play` pour tous les titres.
 
-You can find this option by navigating to `Steam -> Settings -> Compatibility`. Check the box for `Enable Steam Play for all other titles`.
+Vous pouvez trouver cette option en naviguant vers `Steam -> Settings -> Compatibility`. Cochez la case pour `Enable Steam Play for all other titles`.
 
-Then, install VRChat on your WSL and please launch it at least once.
+Ensuite, installez VRChat sur votre WSL et lancez-le au moins une fois.
 
-## Place bootstrapper File
+## Placez le fichier bootstrapper
 
-Place the `version.dll` file that you built into the same directory as the `VRChat.exe` file.
+Placer le `version.dll` que vous avez créé dans le même répertoire que le fichier `VRChat.exe` fichier.
 
-You can find the VRChat executable file at `~/.steam/steam/steamapps/common/VRChat`.
+Vous trouverez le fichier exécutable de VRChat à l'adresse suivante `~/.steam/steam/steamapps/common/VRChat`.
 
-## Edit ~/proton.sh
+## Modifier ~/proton.sh
 
-Set `proton_version` to the name of the folder starting with `Proton` located in `~/.steam/steam/steamapps/common`.
+Set `proton_version` au nom du dossier commençant par `Proton` situé à `~/.steam/steam/steamapps/common`.
 
-Set `client_dir` to `"$HOME/.steam/steam"`.
+Set `client_dir` à `"$HOME/.steam/steam"`.
 
 Example:
 
